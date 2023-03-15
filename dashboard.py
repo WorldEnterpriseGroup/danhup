@@ -1,7 +1,7 @@
 from tkinter import *
 
 ws = Tk()
-ws.geometry('700x500')
+ws.geometry('1920x1080')
 ws.title("Dashboard")
 
 

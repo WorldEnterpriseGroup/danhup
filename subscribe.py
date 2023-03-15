@@ -1,7 +1,7 @@
 from tkinter import *
 
 ws = Tk()
-ws.geometry('1920x1080')
+ws.geometry('1920+100x1080+100')
 ws.title('Welcome')
 ws['bg']='#ffbf00'
 
