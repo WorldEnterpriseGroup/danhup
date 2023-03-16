@@ -17,11 +17,11 @@ $ cd danhup
 Run app with the following command
 
 ```
-python index.py
+python main/main.py
 ```
 
 # How to use app
 
  Check membership
 
-by check membership enter key ```1234```
+wait 30 seconds on welcome page while checking membership
