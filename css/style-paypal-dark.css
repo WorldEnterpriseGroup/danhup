@@ -44,19 +44,9 @@
 * Copyright (C) 2016 Madeon08
 * This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
 */
-/* custom CSS files */
-@import url(font-awesome.min.css);
-@import url(ionicons.min.css);
-@import url(bootstrap.min.css);
-@import url(animate.css);
-@import url(photoswipe.css);
-@import url(default-skin/default-skin.css);
-@import url(jquery.mCustomScrollbar.css);
-@import url(vegas.css);
-/* Google Fonts */
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+/* Vendor CSS (font-awesome, ionicons, bootstrap, animate, photoswipe, default-skin,
+   mCustomScrollbar, vegas) and Google Fonts are loaded with <link> tags in index.html
+   instead of @import, so the browser fetches them in parallel (no import waterfall). */
 /*
 * http://meyerweb.com/eric/tools/css/reset/ 
 * v2.0 | 20110126
@@ -752,6 +742,7 @@ sup {
 }
 .header-right .hero-info .brand-logo {
   max-width: 14rem;
+  height: auto;
   margin-bottom: 1rem;
 }
 .header-right .hero-info h2 {

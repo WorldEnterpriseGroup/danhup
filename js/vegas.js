@@ -8,41 +8,6 @@
  * http://jaysalvat.com/
  * --------------------------------------------------------------------------*/
 
-$(document).ready(function(){
-    "use strict";
-
-    // Main slideshow displayed on the home
-    $('#vegas-background').vegas({
-        slides: [
-            { src: 'img/slide-1.jpg' },
-            { src: 'img/slide-2.jpg' }, // Remove this line and the next one if you want only one static picture
-            { src: 'img/slide-3.jpg' }, // ...
-        ],
-
-        // Delay beetween slides in milliseconds.
-        delay: 5000,
-
-        // Chose your transition effect (See the documentation provided in your download pack)
-        transition: 'fade'
-    });
-
-    // Second slideshow displayed in the right panel
-    $('.header-right').vegas({
-        slides: [
-            { src: 'img/right-slide-1.jpg' },
-            { src: 'img/right-slide-2.jpg' }, // Remove this line and the next one if you want only one static picture
-            { src: 'img/right-slide-3.jpg' }, // ...
-        ],
-
-        // Delay beetween slides in milliseconds.
-        delay: 5000,
-
-        // Chose your transition effect (See the documentation provided in your download pack)
-        transition: 'fade'
-    });
-    
-});
-
 (function ($) {
     'use strict';
 
@@ -713,3 +678,41 @@ $(document).ready(function(){
     };
 
 })(window.jQuery || window.Zepto);
+
+// Slideshow initialisation. It lives AFTER the plugin definition on purpose: index.html loads its scripts with
+// `defer`, so jQuery's DOM-ready has usually already fired by the time this file runs and the callback below executes
+// immediately - the $.fn.vegas plugin must therefore be defined before it is called.
+$(document).ready(function(){
+    "use strict";
+
+    // Main slideshow displayed on the home
+    $('#vegas-background').vegas({
+        slides: [
+            { src: 'img/slide-1.webp' },
+            { src: 'img/slide-2.webp' }, // Remove this line and the next one if you want only one static picture
+            { src: 'img/slide-3.webp' }, // ...
+        ],
+
+        // Delay beetween slides in milliseconds.
+        delay: 5000,
+
+        // Chose your transition effect (See the documentation provided in your download pack)
+        transition: 'fade'
+    });
+
+    // Second slideshow displayed in the right panel
+    $('.header-right').vegas({
+        slides: [
+            { src: 'img/right-slide-1.webp' },
+            { src: 'img/right-slide-2.webp' }, // Remove this line and the next one if you want only one static picture
+            { src: 'img/right-slide-3.webp' }, // ...
+        ],
+
+        // Delay beetween slides in milliseconds.
+        delay: 5000,
+
+        // Chose your transition effect (See the documentation provided in your download pack)
+        transition: 'fade'
+    });
+    
+});
