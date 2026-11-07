@@ -22,10 +22,24 @@
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
 
         <!-- ============== Resources style ============== -->
+        <!-- Google Fonts: connect early, display=swap so text is never invisible while the font loads -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700%7CMontserrat:400,700&amp;display=swap">
+
+        <!-- Vendor CSS: loaded in parallel (was a serial @import chain inside style-paypal-dark.css). Order matters for the cascade. -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/ionicons.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/photoswipe.css" />
+        <link rel="stylesheet" href="css/default-skin/default-skin.css" />
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="css/vegas.css" />
         <link rel="stylesheet" href="css/style-paypal-dark.css" />
 
-		<!-- Modernizr runs quickly on page load to detect features -->
-		<script src="js/modernizr.custom.js"></script>
+		<!-- Modernizr runs quickly on page load to detect features (deferred: nothing in the CSS or JS of this page depends on its classes) -->
+		<script src="js/modernizr.custom.js" defer></script>
 	</head>
 	
 	<body>
@@ -116,7 +130,7 @@
 
 				<div class="hero-info">
 
-					<img src="img/logo.png" alt="" class="brand-logo" />
+					<img src="img/logo.webp" alt="" class="brand-logo" width="280" height="280" loading="lazy" decoding="async" />
 
 					<h2>IQON Inc. London<br>
 						<small>Since 1929</small>
@@ -142,9 +156,9 @@
 	                <!-- 1 / PICTURE -->
 	                <figure class="col-xs-12 col-sm-6 col-lg-6 annex-img split-section" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
-	                    <a href="img/gallery-1.jpg" class="gallery-link small" data-image="img/gallery-1.jpg" itemprop="contentUrl" data-size="1920x1280">
+	                    <a href="img/gallery-1.webp" class="gallery-link small" data-image="img/gallery-1.webp" itemprop="contentUrl" data-size="1920x1280">
 
-	                        <img src="img/gallery-1.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+	                        <img src="img/gallery-1-1200.webp" srcset="img/gallery-1-600.webp 600w, img/gallery-1-1200.webp 1200w" sizes="(max-width: 767px) 100vw, 36vw" width="1200" height="800" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" loading="lazy" decoding="async" />
 
 	                    </a>
 
@@ -166,9 +180,9 @@
 	                <!-- 2 / PICTURE -->
 	                <figure class="col-xs-12 col-sm-6 col-lg-6 annex-img split-section" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
-	                    <a href="img/gallery-2.jpg" class="gallery-link small" data-image="img/gallery-2.jpg" itemprop="contentUrl" data-size="1920x1280">
+	                    <a href="img/gallery-2.webp" class="gallery-link small" data-image="img/gallery-2.webp" itemprop="contentUrl" data-size="1920x1280">
 
-	                        <img src="img/gallery-2.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+	                        <img src="img/gallery-2-1200.webp" srcset="img/gallery-2-600.webp 600w, img/gallery-2-1200.webp 1200w" sizes="(max-width: 767px) 100vw, 36vw" width="1200" height="800" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" loading="lazy" decoding="async" />
 
 	                    </a>
 
@@ -190,9 +204,9 @@
 	                <!-- 3 / PICTURE -->
 	                <figure class="col-xs-12 col-sm-6 col-lg-6 annex-img split-section" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
-	                    <a href="img/gallery-3.jpg" class="gallery-link small" data-image="img/gallery-3.jpg" itemprop="contentUrl" data-size="1920x1280">
+	                    <a href="img/gallery-3.webp" class="gallery-link small" data-image="img/gallery-3.webp" itemprop="contentUrl" data-size="1920x1280">
 
-	                        <img src="img/gallery-3.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+	                        <img src="img/gallery-3-1200.webp" srcset="img/gallery-3-600.webp 600w, img/gallery-3-1200.webp 1200w" sizes="(max-width: 767px) 100vw, 36vw" width="1200" height="800" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" loading="lazy" decoding="async" />
 
 	                    </a>
 
@@ -214,9 +228,9 @@
 	                <!-- 4 / PICTURE -->
 	                <figure class="col-xs-12 col-sm-6 col-lg-6 annex-img split-section" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 
-	                    <a href="img/gallery-4.jpg" class="gallery-link small" data-image="img/gallery-4.jpg" itemprop="contentUrl" data-size="1920x1280">
+	                    <a href="img/gallery-4.webp" class="gallery-link small" data-image="img/gallery-4.webp" itemprop="contentUrl" data-size="1920x1280">
 
-	                        <img src="img/gallery-4.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" />
+	                        <img src="img/gallery-4-1200.webp" srcset="img/gallery-4-600.webp 600w, img/gallery-4-1200.webp 1200w" sizes="(max-width: 767px) 100vw, 36vw" width="1200" height="800" itemprop="thumbnail" alt="This is my work" class="img-responsive gallery-img small-square" loading="lazy" decoding="async" />
 
 	                    </a>
 
@@ -526,37 +540,39 @@
 	    <!-- ********** Resources jQuery ********** -->
 	    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
 		
+		<!-- All scripts below are deferred: they still execute in this exact order, after the HTML is parsed and before DOMContentLoaded.
+			 Do not add inline scripts that use jQuery/google.maps above them without waiting for DOMContentLoaded. -->
 		<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.easings.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.min.js" defer></script>
+		<script src="js/jquery.easings.min.js" defer></script>
+		<script src="js/bootstrap.min.js" defer></script>
 
 		<!-- Google Maps API -->
-		<script src="http://maps.google.com/maps/api/js"></script>
+		<script src="https://maps.google.com/maps/api/js" defer></script>
 
 		<!-- Newsletter plugin -->
-		<script src="js/notifyMe.js"></script>
+		<script src="js/notifyMe.js" defer></script>
 
 		<!-- Contact form plugin -->
-		<script src="js/contact-me.js"></script>
+		<script src="js/contact-me.js" defer></script>
 
 		<!-- Slideshow/Image plugin -->
-		<script src="js/vegas.js"></script>
+		<script src="js/vegas.js" defer></script>
 
 		<!-- Scroll plugin -->
-		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.mousewheel.js" defer></script>
 
 		<!-- Custom Scrollbar plugin -->
-		<script src="js/jquery.mCustomScrollbar.js"></script>
+		<script src="js/jquery.mCustomScrollbar.min.js" defer></script>
 
 		<!-- PhotoSwipe Core JS file -->
-		<script src="js/photoswipe.js"></script> 
+		<script src="js/photoswipe.min.js" defer></script> 
 
 		<!-- PhotoSwipe UI JS file -->
-		<script src="js/photoswipe-ui-default.js"></script>
+		<script src="js/photoswipe-ui-default.js" defer></script>
 
 		<!-- Main JS File -->
-		<script src="js/main.js"></script>
+		<script src="js/main.js" defer></script>
 		
 		<!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 
